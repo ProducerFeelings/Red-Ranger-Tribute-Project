@@ -3,12 +3,6 @@ h1 {
     margin-left: 500px;
 }
 
-.top-nav {
-    display: flex;
-    justify-content: flex-end; /* Align items to the left */
-    margin-top: -50px; /* Adjust as needed */
-    margin-right: 280px;
-}
 
 ul {
     list-style-type: none;
@@ -17,9 +11,11 @@ ul {
     display: flex; /* Use flexbox for list items */
 }
 
+.top-nav ul li ahr
 li {
     margin-right: 100px;
 }
+
 
 li:last-child {
     margin-right: 0; /* Remove right margin for the last list item */
@@ -28,8 +24,17 @@ li:last-child {
 li a {
     text-decoration: none;
     color: white;
-    padding: 14px 16px;
+    padding: 14px 40px;
 }
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the left */
+    margin-top: -50px; /* Adjust as needed */
+    margin-right: 600px;
+}
+
+
 
 body {
     background-color: #0A0A0A;
@@ -37,9 +42,7 @@ body {
     font-size: 18px;
 }
 
-.highlight {
-    color: orange;
-}
+
 
 .gray-background {
     background-color:  #0A0A0A;
@@ -241,15 +244,31 @@ img {
 }
 
 footer {
-    display: flex;
-justify-content: space-between;
-align-items: center;
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  }
+  
+  .footer .two {
+      margin-left: 0;
+  }    
+  
+  footer button {
+    background-color:white /* Button color */
+    color(white)
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Button padding */
+    cursor: pointer; /* Pointer cursor on hover */
+}
 
-    }
-
-.footer .two {
-    margin-left: 0;
-}    
+footer button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
 
 .white-background {
     color: white;
@@ -258,25 +277,35 @@ align-items: center;
 }
 
 .navigation-bar {
-    background-color: white; /* White background */
-    padding: 10px;
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
-    margin-left: 14rem;
+   display: flex;
+   justify-content: center;
+   background-color: #333;
+   color: white;
+   position: sticky;
+   top: 0;
+   z-index: 10;
+   width: 100%;
+   padding: 10px;
+   margin: 0;
+   box-sizing: border-box;
 }
+
+.navigation-bar a:not(:last-child) {
+    border-right: 1px solid red;
+}
+
+
 
 .navigation-bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: inline-flex;
+    display: flex;
     gap: 5px;
 }
 
 .navigation-bar li {
-    display: inline;
-    position: relative;
+    margin: 0 20px; /* Space between links */
 }
 
 .navigation-bar li:not(:last-child)::after {
@@ -288,18 +317,20 @@ align-items: center;
 
 .navigation-bar a {
     text-decoration: none;
-    color: #bc5c23; /* Orange text */
+    color: white
     font-weight: bold;
+    font-size:1.3rem;
     padding: 5px 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.navigation-bar a:hover {
-    background-color: orange; /* Orange background on hover */
-    color: white; /* White text on hover */
-}
+
 
 .lifeof {
+text-align: center;
+font-size: 10rem;
+font-weight: bold;
+margin-bottom: 5rem;
 
 }
 
@@ -313,8 +344,7 @@ h5 {
     display: flex;   /* Flexbox enables centering */
     justify-content: center;  /* Horizontally center the content */
     align-items: center;  /* Vertically center the content */
-    margin: 0 auto;  
-    max-width: 800px;
+    
     color: black;
     margin-left: 20rem;
     line-height: 1.3;             /* Optional: improve readability with line spacing */
@@ -331,6 +361,12 @@ h5 {
     margin-left: 20rem;
     color: black;
 }
+
+
+.paragraph3 {
+    
+}
+
 
 .historyimage1 {
     text-align: center;
@@ -504,3 +540,180 @@ margin-left: 5rem;
 
 
 }
+
+.keymoments {
+    color: #000;
+    margin-left: 7rem;
+    margin-top: -4.8rem;
+
+}
+
+.timeback {
+    margin-left: 5rem;
+    background-color:#ebebeb;
+    padding: 1rem;
+    width: 70%;
+    height: auto;
+    border: 1px dotted black;
+}
+
+.timeback {
+    border: 2px dotted black; /* Adds a dotted border */
+    padding: 10px; /* Adds some padding inside the border */
+}
+
+
+.timeback p {
+    color: black;
+    
+    
+  
+}
+
+.timeback .circle-item {
+    margin-left: 4.5rem;
+    margin-top: -2.35rem;
+
+}
+
+.sentence1 {
+    margin-top: -1.3rem;
+    margin-left: 6.5rem
+}
+
+.whitepart2 {
+ background-color: white;   
+ padding: 20px;
+}
+
+.timeback {
+    margin-left: 5rem;
+    background-color:#ebebeb;
+    padding: 1rem;
+    width: 70%;
+    height: auto;
+    border: 1px dotted black;
+}
+
+.timeback2 {
+   
+    padding: 1rem;
+    width: 70%;
+    margin-left: 5rem;
+}
+
+.timeback2 p {
+    color: #000;
+}
+
+
+
+.timeback3 {
+    margin-left: 5rem;
+    background-color:#ebebeb;
+    padding: 3rem;
+    width: 93%;
+    height: auto;
+    border: 1px dotted black;
+    margin-left: -1rem;
+}
+
+
+.moveall {
+margin-left: -1.8rem;
+}
+
+.circle-item3 {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-left: 4.5rem;
+}
+
+
+.whitepart3 p {
+    margin-bottom: -1.2rem;
+    
+}
+
+
+.sentence3 {
+    margin-left: 6.5rem;
+    margin-top: -1.3rem;
+}
+
+.timeback3 .whitepart3 p.year {
+    margin-top: 20rem; /* Adjust the margin to move it down or up */
+    font-size: 20px;
+    color: black;
+}
+
+
+
+.circle-item2 {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-left: 4.7rem;
+    margin-top: -2.5rem;
+}
+
+.sentence2 {
+    margin-left: 6.5rem;
+    margin-top: -1.3rem
+}
+
+
+
+
+.timeback4 {
+    padding: 1rem;
+    width: 70%;
+    margin-left: 5rem;
+}
+
+.whitepart4 {
+    
+}
+
+.moveright1 {
+    margin-left: -6rem;
+}
+
+footer {
+    display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+background-color: #0A0A0A;
+margin-top: 84rem;
+    }
+
+.footer p {
+    margin: 0;                /* Remove default margins */
+    color: white;
+    gap: 40rem;
+    margin-top: 100rem; 
+
+}
+
+
+.footer .two {
+    margin-left: -10px;
+}    
+
+.highlight a {
+    color: orange;
+}
+
+
+.container {
+    background-color: soft blue;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 15px;
+}
+
+

@@ -3,32 +3,38 @@ h1 {
     margin-left: 500px;
 }
 
-.top-nav {
-    display: flex;
-    justify-content: flex-end; /* Align items to the left */
-    margin-top: -50px; /* Adjust as needed */
-    margin-right: 280px;
-}
+
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex; /* Use flexbox for list items */
+    gap: 1rem;
 }
 
+.top-nav ul li ahr
 li {
     margin-right: 100px;
+}
+
+.top-nav ul li a {
+    gap: 10rem;
 }
 
 li:last-child {
     margin-right: 0; /* Remove right margin for the last list item */
 }
 
+
+nav.top-nav ul li a {
+    margin-left: 1rem;
+}
+
 li a {
     text-decoration: none;
     color: white;
-    padding: 14px 16px;
+    padding: 14px 40px;
 }
 
 body {
@@ -37,9 +43,7 @@ body {
     font-size: 18px;
 }
 
-.highlight {
-    color: orange;
-}
+
 
 .gray-background {
     background-color:  #0A0A0A;
@@ -67,6 +71,17 @@ img {
     margin-top: -6rem;
 }
 
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end; /* Align items to the left */
+    margin-top: -50px; /* Adjust as needed */
+    margin-right: 600px;
+ 
+}
+
+
+
 .paragraphs {
     padding: 30px 0;
     justify-content: space-between;
@@ -77,7 +92,7 @@ img {
 }
 
 .white-div {
-    background-color: white;
+    background-color:#f9f3e8;
     padding: 150px;
     width: 100%;
     box-sizing: border-box;
@@ -86,7 +101,7 @@ img {
 
 /* CSS for uniform image size and font */
 .triplet img {
-    width: 200px; /* Set a fixed width for the images */
+    max-width: 200px;
     height: auto; /* Maintain aspect ratio */
     border-radius: 6px; /* Add rounded corners */
 }
@@ -107,14 +122,18 @@ img {
 .triplets {
     display: flex;
     flex-direction: row; /* Arrange items horizontally */
-    justify-content: space-around; /* Space items evenly along the main axis */
+    justify-content: space-evenly; /* Space items evenly along the main axis */
     align-items: center; /* Center items vertically */
-    max-width:60rem;
-    margin: auto;
+    margin: 0 auto; /* Center the container */
+    gap: 20px; /* Add gap between the triplets */
 }
 
 .triplet {
     text-align: center; /* Center text */
+    flex: 1; /* Allow each item to grow and take equal space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 
@@ -125,9 +144,8 @@ img {
 .triplet a {
     color: #0A0A0A;
     text-decoration: none;
-    margin-right: 7rem;
-    font-size: 1.3rem;
-    margin-top: 10px;
+    display: block;
+   margin-bottom: 3rem;
     
 }
 
@@ -139,14 +157,34 @@ img {
     line-height: 1.5;
 }
 
+.desc p {
+    font-size: 1.3rem;
+}
+
+.desc2 p {
+    font-size: 1.3rem;
+}
+
+.desc3 p {
+    font-size: 1.3rem;
+}
+
+/* Add borders to separate sections if needed */
+.desc hr, .desc2 hr, .desc3 hr {
+    width: 80%;
+    margin: 10px auto; /* Center the horizontal rule */
+    border: 1px solid #ccc; /* Light gray color */
+}
+
 .desc2 {
-    margin-left: -2rem;
+    margin-top: 20px;
     display: block; /* Ensure the div is block-level */
     padding: 10px 0; /* Add padding for visibility */
     color: #0A0A0A;
     line-height: 1.5;
 }
 .desc3 {
+    margin-top: 13px;
     margin-left: 2rem;
     display: block; /* Ensure the div is block-level */
     padding: 10px 0; /* Add padding for visibility */
@@ -155,18 +193,12 @@ img {
 }
 
 .black-background {
-    display: grid; /* Enables grid layout */
-    place-items: center; /* Centers content both horizontally and vertically */
-    background-color: #0A0A0A;
-    padding: 50px;
-    width: 100%;
-    box-sizing: border-box;
-    position: relative;
-    z-index: -1;
-    max-width: 1200px;
-    min-height: 200px; /* Ensures enough height for vertical centering */
-    margin-left: 10rem;
-   
+    display: flex;              /* Enables Flexbox */
+    justify-content: center;    /* Centers horizontally */
+    align-items: center;        /* Centers vertically */
+    height: 30vh;              /* Ensures full height of the viewport */
+    background-color: black;    /* Black background */
+    padding: 0 2rem;            /* Optional: Adds some space on the sides */
 
 }
 
@@ -178,7 +210,17 @@ img {
 .white2 {
     background-color: white;
     width: 100%;
-    height: 100rem;
+    height: -20rem;
+}
+
+.moveright {
+    margin-left: 16rem;
+}
+
+
+.whole-grid {
+    width: 90%; /* Adjust width as needed */
+
 }
 .image-grid {
     display: grid;
@@ -230,20 +272,49 @@ img {
     padding: 0;
 }
 
+.black-background p {
+    color: white;               /* White text color for contrast */
+    font-size: 1.5rem;          /* Adjust text size for better readability */
+    max-width: 80%;             /* Prevents the text from becoming too wide */
+    text-align: center;         /* Centers the text */
+    margin-bottom: 20px;
+    line-height: 50px;
+
+}
+
+
+.black-background .para {
+    display: flex;
+    align-items: center;
+
+}
 
 .whole-grid {
     margin-top: 1rem; /* Pull the whole grid closer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
 }
 
 .wordabove {
-    text-align: center;
-    margin-top: -0.2rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.wordabove p {
+    margin-right: 5rem;
+    margin-top: 5rem;
 }
 
 footer {
-    display: flex;
+  display: flex;
 justify-content: space-between;
 align-items: center;
+padding: 10px 20px;
 
     }
 
@@ -251,3 +322,16 @@ align-items: center;
     margin-left: 0;
 }    
 
+
+footer button {
+    background-color:white /* Button color */
+    color(white)
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Button padding */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+footer button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
